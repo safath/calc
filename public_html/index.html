@@ -1,0 +1,118 @@
+<html>
+	<head>
+		
+		<title>Loan Ammortization - Joel Nutt</title>		
+		<script language="JavaScript" type="text/javascript" 
+			src="calc.js"></script>		
+                        
+                        <style type="text/css">
+                            .box{
+                                width: 500px;
+                                height: 400px;
+                                text-align: center;
+                                margin:  auto;
+                                margin-top: 50px;
+                                border-radius: 4px;
+                                margin-left: 250px;
+                            }
+                            
+                            input{
+                                height: 45px;
+                                width: 300px;
+                                font-size: 18px;
+                                margin-bottom: 20px;
+                                background-color: #fff;
+                                padding-left: 15px;
+                                margin-left: 20px;
+                                
+                            }
+                            
+                            .outbox{
+                                margin-top: 200px;
+                                text-align: center;
+                            }
+                            
+                            #terms{
+                                width: 80px;
+                                margin-left: 10px;
+                         
+                            }
+                            
+                            #terms2{
+                                width: 80px;
+                            }
+                            
+                            #interest{
+                                margin-left: 30px;
+                            }
+                            
+                            #timeL{
+                                
+                            }
+                            
+                            #addYear{
+                                margin-left: 30px;
+                               
+                            }
+                           
+                            
+                            
+                            fieldset{
+                                alignment-adjust: central;
+                                margin-left: 250px;
+                                margin-right: 250px;
+                                
+                            }
+                        </style>
+	</head>
+	<body>
+		<h1>Loan Amortization Table</h1>
+		<hr>	
+                <div class="box">
+		<form>
+			<fieldset>
+                            <legend><b>Inputs</b></legend>
+                                
+				<label for="principal">Principal:</label>
+				<input type="text" id="principal" />
+				<br />
+				<label for="interest">Interest:</label>
+				<input type="text" id="interest" />
+				<br />
+                                
+                                <label for="terms" id="timeL">Time:</label>
+				<input type="text" id="terms" />  Year
+                                <input type="text" id="terms2"> Month
+				<br />
+                                
+                                <p><b>Extra Payment Options:</b></p>
+                                <label for="addMonth">Add per month:</label>
+				<input type="text" id="addMonth" />
+				<br />
+                                
+                               
+                                <label for="addYear">Add per year:</label>
+				<input type="text" id="addYear" />
+				<br />
+                                
+			
+				<input type="button" value="Calculate" onclick="getValues()" />								
+			</fieldset>
+		</form>
+                </div>
+                
+                <div class= "outbox">
+		<form>
+			<fieldset>
+			<legend>Outputs</legend>
+				<div id="Result"></div>
+			</fieldset>						
+		</form>	
+                    
+                </div>
+                
+                
+	</body>
+</html>
+
+
