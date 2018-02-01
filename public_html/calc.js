@@ -1,11 +1,4 @@
-/**
- * @author Joel Nutt
- * ITEC136-V1WW(FA11) - Franklin U.
- * David Crossmier - Instructor
- * Assigment 8-3 (HW07)
- * 11/06/2011
- * 
-*/
+
 function yearsToMonths(yr){
     return (yr*12);
 }
@@ -67,15 +60,16 @@ function amort(balance, interestRate, terms,addPayment)
     
     
      var result = 
+             "Summary of Amortization".bold()+ "<br />" +
             "ifLoan amount: $" + balance.toFixed(2) +  "<br />" + 
         "Interest rate: " + (interestRate*100).toFixed(2) +  "%<br />" +
-        "Loan duration: " + terms + "<br />" +
+        "Loan duration: " + terms + " Months"+ "<br />" +
         "Monthly payment: $" + payment.toFixed(2) + "<br />" +
-        "Total paid: $" + (payment * terms).toFixed(2) + "<br /><br />";
+        "Total paid (Principal+Interest): $" + (payment * terms).toFixed(2) + "<br /><br />";
         
         //add header row for table to return string
-	result += "<table border='1'><tr><th>Month #</th><th>Payment</th><th>Balance</th>" + 
-        "<th>Interest</th><th>Remaining</th>";
+	result += "<table border='1'><tr><th>Month #</th><th>Payment</th><th>Interest</th>" + 
+        "<th>Balance</th><th>Remaining</th>";
     
     /**
      * Loop that calculates the monthly Loan amortization amounts then adds 
