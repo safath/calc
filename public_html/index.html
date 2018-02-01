@@ -3,7 +3,9 @@
 		
 		<title>Loan Ammortization - Joel Nutt</title>		
 		<script language="JavaScript" type="text/javascript" 
-			src="calc.js"></script>		
+                        src="calc.js">
+                 
+                </script>		
                         
                         <style type="text/css">
                             .box{
@@ -28,7 +30,7 @@
                             }
                             
                             .outbox{
-                                margin-top: 200px;
+                                margin-top: 350px;
                                 text-align: center;
                             }
                             
@@ -73,6 +75,10 @@
 			<fieldset>
                             <legend><b>Inputs</b></legend>
                                 
+                                <label for="name">Name:</label>
+				<input type="text" id="name" />
+				<br />
+                                
 				<label for="principal">Principal:</label>
 				<input type="text" id="principal" />
 				<br />
@@ -96,9 +102,11 @@
 				<br />
                                 
 			
-				<input type="button" value="Calculate" onclick="getValues()" />								
+				<input type="button" value="Calculate" onclick="getValues();showInput();" />								
 			</fieldset>
 		</form>
+                    
+                    <h2><span id='display'></span></h2>
                 </div>
                 
                 <div class= "outbox">
