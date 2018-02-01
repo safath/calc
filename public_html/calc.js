@@ -272,3 +272,8 @@ function validateInputs(value)
 		return true;
 	}
 }
+
+           function showInput() {
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("name").value+"'s Amortization Table";
+    }
