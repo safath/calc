@@ -11,28 +11,32 @@
                             
                             h1{
                                 text-align: center;
-                                margin-left: 120px;
+                                //margin-left: 120px;
                             }
                             .box{
                                 width: 500px;
-                                height: 400px;
+                                height: 500px;
                                 text-align: center;
                                 margin:  auto;
                                 margin-top: 50px;
+                                margin-bottom: 30px;
                                 border-radius: 4px;
-                                margin-left: 250px;
-                                background-color: #cbc4d1;
+                                margin-left: 0 auto;
+                                background-color: rgba(92, 0, 153,0.7)
+                                
                             }
                             
+                            
                             input{
-                                height: 45px;
-                                width: 300px;
+                                height: 25px;
+                                width: 200px;
                                 font-size: 18px;
                                 margin-bottom: 20px;
                                 background-color: #fff;
-                                padding-left: 15px;
+                                padding-left: 30px;
                                 margin-left: 20px;
                                 background-color: #cbc4d1;
+                                margin-top: 10px;
                                
                                 
                             }
@@ -40,9 +44,9 @@
                             .outbox{
                                 margin-top: 350px;
                                 text-align: center;
-                                margin-left: 150px;
+                                
                             }
-                            
+                            /*
                             #terms{
                                 width: 80px;
                                 margin-left: 10px;
@@ -74,21 +78,35 @@
                                 margin-right: 250px;
                                 
                             }
+                            */
                             
                             #h2{
                                 
                                 
                                 font-size: 25px;
-                                margin-top: 110px;
-                                margin-left: 120px;
+                                margin-top: 330px;
+                                text-align: center;
                             }
                             
                             body{
-                                background-color: #ece8ef;
+                                background-color: #e6b800;
                                 background-repeat: repeat;
                                 background-size: 100% 720px;
                             }
                             
+                            legend{
+                                font-size: 20px;
+                                
+                            }
+                            
+                            #btn{
+                                //padding: 20px 30px;
+                                color: #fff;
+                                background-color: #2ecc71;
+                                border: none;
+                                
+                                
+                            }
                         </style>
 	</head>
 	<body>
@@ -96,38 +114,38 @@
 		<hr>	
                 <div class="box">
 		<form>
-			<fieldset>
+			<!--<fieldset> -->
                             <legend><b>Inputs</b></legend>
                                 
-                                <label for="name">Name:</label>
-				<input type="text" id="name" />
+                                <!--<label for="name">Name:</label>-->
+				<input type="text" id="name" placeholder='Name' />
 				<br />
                                 
-				<label for="principal">Principal:</label>
-				<input type="text" id="principal" />
+				<!--<label for="principal">Principal:</label>-->
+				<input type="text" id="principal" placeholder='Principal' />
 				<br />
-				<label for="interest">Interest:</label>
-				<input type="text" id="interest" />
+				<!--<label for="interest">Interest:</label>-->
+				<input type="text" id="interest" placeholder='Interest' />
 				<br />
                                 
-                                <label for="terms" id="timeL">Time:</label>
-				<input type="text" id="terms" />  Year
-                                <input type="text" id="terms2"> Month
+                               <!-- <label for="terms" id="timeL">Time:</label>-->
+				<input type="text" id="terms" placeholder='year' />  <!--Year-->
+                                <input type="text" id="terms2" placeholder='month'> <!--Month-->
 				<br />
                                 
                                 <p><b>Extra Payment Options:</b></p>
-                                <label for="addMonth">Add per month:</label>
-				<input type="text" id="addMonth" />
+                                <!--<label for="addMonth">Add per month:</label>-->
+				<input type="text" id="addMonth" placeholder='Add per month' />
 				<br />
                                 
                                
-                                <label for="addYear">Add per year:</label>
-				<input type="text" id="addYear" />
+                                <!--<label for="addYear">Add per year:</label>-->
+				<input type="text" id="addYear" placeholder='Add per year' />
 				<br />
                                 
 			
-				<input type="button" value="Calculate" onclick="getValues();showInput();" />								
-			</fieldset>
+				<input type="button" id="btn" value="Calculate" onclick="getValues();showInput();" />								
+			<!-- </fieldset>-->
 		</form>
                     
                     <div id='h2'><span id='display'></span></div>
